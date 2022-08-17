@@ -1,0 +1,33 @@
+<!--pages/login/login.wxml-->
+<view>
+  <view class="wrapper">
+    <view class="welcome">
+      欢迎使用图书系统!
+    </view>
+
+    <view class="input-content">
+      <view class="input-item">
+        <text class="tit">手机号码</text>
+        <!-- data-type 绑定值 或者 用id绑定值, handleInput 方法收集 -->
+        <input type="text" placeholder="请输入手机号码" data-type="phone" id="phone" bindinput="handleInput"/>
+      </view>
+
+      <view class="input-item">
+        <text class="tit">密码</text>
+        <input type="password" placeholder="请输入密码" data-type="password" id="password" bindinput="handleInput"/>
+      </view>
+    </view>
+
+    <button class="confirm-btn" bindtap="login">登录</button>
+    <view class="forget">
+      忘记密码?
+    </view>
+
+
+  </view>
+
+  <view class="register">
+    还没有账号?
+    <text>联系 1097625354@qq.com 马上注册</text>
+  </view>
+</view>

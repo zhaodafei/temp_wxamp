@@ -1,0 +1,66 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/book/book",
+        "pages/login/login",
+        "pages/personal/personal",
+        "pages/search/search"
+    ],
+    "window": {
+        "backgroundColor": "#FF6B81",
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#FF6B81",
+        "navigationBarTitleText": "大飞_云读书",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#333",
+        "selectedColor": "#d43c33",
+        "backgroundColor": "#fff",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "主页",
+                "iconPath": "/static/img/extra/tab-home.png",
+                "selectedIconPath": "/static/img/extra/tab-home-current.png"
+            },
+            {
+                "pagePath": "pages/book/book",
+                "text": "图书",
+                "iconPath": "/static/img/extra/tab-my.png",
+                "selectedIconPath": "/static/img/extra/tab-my-current.png"
+            },
+            {
+                "pagePath": "pages/personal/personal",
+                "text": "个人中心",
+                "iconPath": "/static/img/extra/tab-my.png",
+                "selectedIconPath": "/static/img/extra/tab-my-current.png"
+            }
+        ]
+    },
+    "subpackages": [
+        {
+            "root": "bookPackage",
+            "pages": [
+                "pages/recommendBook/recommendBook",
+                "pages/rankBook/rankBook",
+                "pages/bookDetail/bookDetail"
+            ],
+            "independent": true
+        },
+        {
+          "root": "otherPackage",
+          "name": "other",
+          "pages": [
+            "pages/other/other"
+          ]
+        }
+    ],
+    "preloadRule": {
+      "pages/index/index": {
+        "packages": ["bookPackage", "other"]
+      }
+    },
+    "sitemapLocation": "sitemap.json",
+    "style": "v2"
+}

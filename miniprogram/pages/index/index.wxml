@@ -1,0 +1,88 @@
+<!--index.wxml-->
+<view class="container">
+  <!--轮播图-->
+  <swiper class="banners" indicator-dots indicator-color='ivory' indicator-active-color='#d43c33'>
+    <swiper-item wx:for="{{bannerList}}" wx:key="bannerId">
+      <image src="{{item.pic}}" />
+    </swiper-item>
+  </swiper>
+
+  <!-- 导航区域 -->
+  <view class="navContainer">
+    <view class="navItem" bindtap="toRecommendBook">
+      <view class="icon">
+        <image class="icon-img" src="/static/img/icon_user.svg"/>
+      </view>
+      <text>每日推荐</text>
+    </view>
+
+    <view class="navItem" bindtap="toOther">
+      <view class="icon">
+        <image class="icon-img" src="/static/img/icon_user.svg"/>
+      </view>
+      <text>其他页面</text>
+    </view>
+
+    <view class="navItem" bindtap="toRecommendBook">
+      <view class="icon">
+        <image class="icon-img" src="/static/img/icon_user.svg"/>
+      </view>
+      <text>无X</text>
+    </view>
+
+    <view class="navItem" bindtap="toRecommendBook">
+      <view class="icon">
+        <image class="icon-img" src="/static/img/icon_user.svg"/>
+      </view>
+      <text>无X</text>
+    </view>
+
+    <view class="navItem" bindtap="toRecommendBook">
+      <view class="icon">
+        <image class="icon-img" src="/static/img/icon_user.svg"/>
+      </view>
+      <text>无X</text>
+    </view>
+
+
+
+  </view>
+
+  <!-- 图书推荐 -->
+  <view class="recommendContainer">
+    <!-- tip: 组件在 index.json 中引入-->
+    <NavHeader title="推荐图书" nav="为你精心推荐"></NavHeader>
+
+    <!-- 内容区 -->
+    <scroll-view class="recommendScroll" enable-flex scroll-x>
+      <view class="scrollItem" wx:for="{{recommendList}}" wx:key="id" wx:for-item="recommendItem">
+        <image src="{{recommendItem.picUrl}}"></image>
+        <text>{{recommendItem.name}}</text>
+      </view>
+    </scroll-view>
+  </view>
+
+  <!-- 排行榜区域 -->
+  <view class="topList">
+    <NavHeader title="排行榜" nav="热书风向标"></NavHeader>
+
+    <swiper class="topListSwiper" circular next-margin="50rpx" previous-margin="50rpx">
+      <swiper-item wx:for="{{topList}}" wx:key="name">
+        <view class="swiperItem">
+          <view class="title">{{item.name}}</view>
+          <view class="musicItem" wx:for="{{item.tracks}}"
+                wx:key="id"
+                wx:for-item="musicItem"
+                bindtap="toBookDetail"
+                data-id='{{musicItem.id}}'>
+            <image src="{{musicItem.picUrl}}"></image>
+            <text class="count">{{index + 1}}</text>
+            <text class="musicName">{{musicItem.name}}</text>
+          </view>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+
+</view>
+

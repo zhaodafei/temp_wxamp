@@ -1,0 +1,1 @@
+"D:\soft_position\Tencent\微信web开发者工具\cli.bat" cloud functions deploy --e dafe-4e9c07 --n quickstartFunctions --r --project "E:\self_web\git_dev\vue\03_wx" --report_first --report

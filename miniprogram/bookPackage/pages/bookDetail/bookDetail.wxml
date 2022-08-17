@@ -1,0 +1,49 @@
+<!--bookPackage/pages/bookDetail/bookDetail.wxml-->
+<view class="bookDetailContainer">
+  <view class="author">{{book.ar[0].name}}</view>
+  <view class="circle"></view>
+  <image class="needle {{isPlay && 'needleRotate'}}" src="/static/img/book/needle.png"></image>
+
+  <view class="discContainer {{isPlay && 'discAnimation'}}">
+    <image class="disc" src="/static/img/book/disc.png"></image>
+    <image class="musicImg" src="{{book.al.picUrl}}"></image>
+  </view>
+
+  <!-- 进度条控制区域 -->
+  <view class="progressControl">
+    <text>{{currentTime}}</text>
+    <!-- 总进度条 -->
+    <view class="barControl">
+      <!-- 实时进度条 -->
+      <view class="audio-currentTime-Bar" style="width: {{currentWidth + 'rpx'}}">
+        <!-- 小圆球 -->
+        <view class="audio-circle"></view>
+      </view>
+    </view>
+    <text>{{durationTime}}</text>
+  </view>
+
+  <!-- 底部控制播放区域 -->
+  <view class="musicControl">
+    <text class="item">
+      <text class="icon">⇋</text>
+    </text>
+
+    <text class="item" id="pre" bindtap="handleSwitch">
+      <text class="icon">◁</text>
+    </text>
+
+    <text class="item big" bindtap="handleMusicPlay">
+      <text class="icon {{isPlay?'start': 'end'}} big">⊜</text>
+    </text>
+
+    <text class="item" id="next" bindtap="handleSwitch">
+      <text class="icon">▷</text>
+    </text>
+
+    <text class="item">
+      <text class="icon">☰</text>
+    </text>
+  </view>
+
+</view>
