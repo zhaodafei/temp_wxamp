@@ -65,4 +65,14 @@ Page({
     })
   },
 
+  toH5(event) {
+    wx.navigateTo({
+      url: '/pages/h5/index?musicId=123456'
+    })
+  },
+  toH5Back(event) {
+    wx.navigateTo({
+        url: '/pages/h5Back/index'
+    })
+  },
 });
