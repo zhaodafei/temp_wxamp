@@ -1,0 +1,9 @@
+<!--pages/h5Back/index.wxml-->
+<!-- 
+从H5页面返回到微信页面 
+import wxJDK from 'weixin-js-sdk'
+wxJDK.miniProgram.navigateTo({ url: '/pages/h5Back/index' })
+
+
+ -->
+<text> 从H5页面返回到小程序 pages/h5Back/index.wxml</text>

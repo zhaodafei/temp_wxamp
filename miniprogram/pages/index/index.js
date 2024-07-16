@@ -46,6 +46,12 @@ Page({
     // this.setData({bannerList: []}) // 赋值
     // this.setData({recommendList: []}) // 赋值
 
+    // // 自定义tabBar使用
+    // if (typeof this.getTabBar === 'function' && this.getTabBar()) {
+    //   this.getTabBar().setData({
+    //     selected: 0,
+    //   })
+    // }
   },
 
   toRecommendBook() {
@@ -65,4 +71,14 @@ Page({
     })
   },
 
+  toH5(event) {
+    wx.navigateTo({
+      url: '/pages/h5/index?musicId=123456'
+    })
+  },
+  toH5Back(event) {
+    wx.navigateTo({
+        url: '/pages/h5Back/index'
+    })
+  },
 });

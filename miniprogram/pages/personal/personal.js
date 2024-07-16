@@ -36,6 +36,13 @@ Page({
       this.getUserRecentReadList(this.data.userInfo.userId)
     }
     console.log("???????",userInfo);
+
+    // // 自定义tabBar使用
+    // if (typeof this.getTabBar === 'function' && this.getTabBar()) {
+    //   this.getTabBar().setData({
+    //     selected: 2,
+    //   })
+    // }
   },
 
   getUserRecentReadList(userId) {

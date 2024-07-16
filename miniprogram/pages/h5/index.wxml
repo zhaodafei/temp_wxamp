@@ -1,0 +1,9 @@
+<!--pages/h5/index.wxml-->
+<view class="page">
+<!--  这个页面要登录后才可以看到嵌套的H5内容 -->
+    <!-- <text> 我是H5页面 </text>  -->
+    <!-- <web-view src="https://www.baidu.com"></web-view> -->
+  <!-- <web-view src="http://localhost:3000/login"></web-view> -->
+  <!-- <web-view src="http://localhost:8001/home?phone=12345678912"></web-view> -->
+  <web-view src="{{H5Url}}"></web-view>
+</view>

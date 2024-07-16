@@ -1,4 +1,7 @@
 {
+    "projectname": "大飞_云读书",
+    "libVersion": "2.14.1",
+    "appid": "wx17c7d003f541f908",
     "miniprogramRoot": "miniprogram/",
     "cloudfunctionRoot": "cloudfunctions/",
     "setting": {
@@ -39,9 +42,6 @@
         "useCompilerPlugins": false,
         "minifyWXML": true
     },
-    "appid": "wx17c7d003f541f908",
-    "projectname": "03_wx",
-    "libVersion": "2.14.1",
     "cloudfunctionTemplateRoot": "cloudfunctionTemplate/",
     "condition": {
         "search": {

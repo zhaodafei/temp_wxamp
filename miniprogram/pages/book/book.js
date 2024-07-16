@@ -59,7 +59,12 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    // // 自定义tabBar使用
+    // if (typeof this.getTabBar === 'function' && this.getTabBar()) {
+    //   this.getTabBar().setData({
+    //     selected: 1,
+    //   })
+    // }
   },
 
   toSearchPage() {

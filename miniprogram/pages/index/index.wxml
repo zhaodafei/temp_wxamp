@@ -23,18 +23,18 @@
       <text>其他页面</text>
     </view>
 
-    <view class="navItem" bindtap="toRecommendBook">
+    <view class="navItem" bindtap="toH5">
       <view class="icon">
         <image class="icon-img" src="/static/img/icon_user.svg"/>
       </view>
-      <text>无X</text>
+      <text>webViews嵌套H5页面 </text>
     </view>
 
-    <view class="navItem" bindtap="toRecommendBook">
+    <view class="navItem" bindtap="toH5Back">
       <view class="icon">
         <image class="icon-img" src="/static/img/icon_user.svg"/>
       </view>
-      <text>无X</text>
+      <text>给H5返回页面准备</text>
     </view>
 
     <view class="navItem" bindtap="toRecommendBook">

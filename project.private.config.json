@@ -1,5 +1,8 @@
 {
-    "setting": {},
+    "projectname": "大飞_云读书",
+    "setting": {
+        "compileHotReLoad": true
+    },
     "condition": {
         "miniprogram": {
             "list": [
