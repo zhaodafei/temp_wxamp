@@ -17,13 +17,13 @@
 
   <view class="footer">
     <view class="countdown-title">
-      今天剩余时间:
-      <block>
+      <text>
+        <text>今天剩余时间: </text>
         <!-- <text class="">{{days}}天</text> -->
         <text>{{ hours }}时</text>
         <text>{{ minutes }}分</text>
         <text>{{ seconds }}秒</text>
-      </block>
+      </text>
     </view>
   </view>
 
@@ -55,4 +55,7 @@
     </view>
   </view>
 
+  <view class="img-wrapper">
+    <image class="icon-img" src="/static/qr_officialAccounts.jpg"/>
+  </view>
 </view>
