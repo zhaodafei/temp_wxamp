@@ -1,0 +1,29 @@
+<navigation-bar title="倒计时" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+
+
+
+<view class="container">
+  <view class="header">美好的一天</view>
+
+  <view class="content">
+    <view>
+      <view>美好的一天开始了,</view>
+      <view>请大家努力工作,</view>
+      <view>迎娶白富美,</view>
+      <view>嫁个高富帅,</view>
+      <view>踏上人生巅峰</view>
+    </view>
+
+  </view>
+  <view class="footer">
+    <view class="countdown-title">
+      今天剩余时间:
+      <block>
+        <!-- <text class="">{{days}}天</text> -->
+        <text>{{ hours }}时</text>
+        <text>{{ minutes }}分</text>
+        <text>{{ seconds }}秒</text>
+      </block>
+    </view>
+  </view>
+</view>

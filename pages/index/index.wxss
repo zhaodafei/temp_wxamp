@@ -1,0 +1,27 @@
+page {
+  height: 100vh;
+}
+
+.container{
+
+}
+
+.container .header{
+  font-size: 40rpx;
+  font-weight: bold;
+  text-align: center;
+  color: #ff6b81;
+}
+
+.container .content{
+  margin-top: 30rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.footer{
+  text-align: center;
+  margin-top: 30rpx;
+  color: #c0c0c0;
+  font-size: 26rpx;
+}

@@ -1,7 +1,0 @@
-<!--pages/other/other.wxml-->
-<import src="/template/myTemplate/myTemplate.wxml"/>
-<view class="otherContainer">
-  <!-- 测试使用模板 -->
-  <text>is="myTmp" 要和模板中的 name="myTmp" 对应</text>
-  <template is="myTmp" data="{{...person}}"/>
-</view>
