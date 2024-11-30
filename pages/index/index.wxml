@@ -13,8 +13,8 @@
       <view>嫁个高富帅,</view>
       <view>踏上人生巅峰</view>
     </view>
-
   </view>
+
   <view class="footer">
     <view class="countdown-title">
       今天剩余时间:
@@ -26,4 +26,33 @@
       </block>
     </view>
   </view>
+
+  <view>
+    <view class="page-section page-section-spacing">
+      <swiper
+          indicator-dots="true" autoplay="true" circular="{{true}}"
+          interval="3000" previous-margin="2rpx">
+        <block wx:for="{{sBackground}}" wx:key="*this">
+          <swiper-item>
+            <view class="swiper-item {{item}}"></view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+
+  <view>
+    <view class="page-section page-section-spacing">
+      <swiper
+          indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}"
+          interval="{{interval}}" duration="{{duration}}" previous-margin="{{previousMargin}}px" next-margin="{{nextMargin}}px">
+        <block wx:for="{{sBackground2}}" wx:key="*this">
+          <swiper-item>
+            <view class="swiper-item {{item}}"></view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+
 </view>

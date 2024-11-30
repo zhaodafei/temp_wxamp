@@ -10,6 +10,18 @@ Page({
     hours: '00', //时
     minutes: '00', //分
     seconds: '00', //秒
+
+    // 轮播图
+    sBackground: ['demo-text-3', 'demo-text-1', 'demo-text-2',],
+    sBackground2: ['demo-text-1', 'demo-text-2', 'demo-text-3'],
+    indicatorDots: true,
+    vertical: false,
+    autoplay: true,
+    circular: false,
+    interval: 3000,
+    duration: 500,
+    previousMargin: 0,
+    nextMargin: 0
   },
   countTime() {
     let days,hours, minutes, seconds;
