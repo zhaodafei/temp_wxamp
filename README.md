@@ -40,3 +40,9 @@ app.json 中 "custom": true, 可以看效果
 
 
 
+### 分支说明
+
+1. `main` 简单的读书demo
+2. `main-v1` 简单的读书demo
+3. `main-v2` 简单的时钟demo
+3. xxx
